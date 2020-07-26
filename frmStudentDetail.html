@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read More Example</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <!-- <h1>chapter 1</h1> -->
+    <p id="para" ></p>
+
+    <div class="alert alert-primary" role="alert">
+        Student Detail...
+    </div>
+    <!-- <div>
+        <p id="counterResult"> </p>
+    </div> -->
+
+<!-- <input type="text" id="inputName">
+<button onclick="addRecord()">Add</button> -->
+
+
+    <!-- <form> -->
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputNamelbl">Name</label>
+            <input type="text" class="form-control" id="inputName" placeholder="Name">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputFatherName">Father's Name</label>
+            <input type="text" class="form-control" id="inputFatherName" placeholder="Father's Name">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputAddress">Address</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        </div>
+ 
+        <div class="form-row">
+
+          <div class="form-group col-md-4">
+            <label for="inputState">Class</label>
+            <select id="inputState" class="form-control">
+              <option selected>Choose...</option>
+              <option>1. Play Group</option>
+              <option>2. Nursery</option>
+              <option>3. Prep</option>
+            </select>
+          </div>
+
+        </div>
+        <button type="submit" class="btn btn-primary" onclick="addRecord()">Add Record</button>
+        <button type="submit" class="btn btn-primary" onclick="deleteAll()">Delete All</button>
+      <!-- </form> -->
+
+
+
+
+<div>
+    <table class="table" style="width:100%" id="myTable">
+        <!-- <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Name</th>
+              <th scope="col">Fahter's Name</th>
+              <th scope="col">Address</th>
+              <th scope="col">Class</th>
+            </tr>
+          </thead> -->
+
+        <!-- <tr>
+          <th>Name</th>
+          <th>Father's Name</th>
+          <th>Address</th>
+          <th>Class </th>
+        </tr> -->
+    </table>
+<!-- Modal -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Student Detail</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputNamelblModal">Name</label>
+            <input type="text" class="form-control" id="inputNameModal" placeholder="Name">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputFatherNameModal">Father's Name</label>
+            <input type="text" class="form-control" id="inputFatherNameModal" placeholder="Father's Name">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputAddressModal">Address</label>
+          <input type="text" class="form-control" id="inputAddressModal" placeholder="1234 Main St">
+        </div>
+ 
+        <div class="form-row">
+
+          <div class="form-group col-md-4">
+            <label for="inputStateModal">Class</label>
+            <select id="inputStateModal" class="form-control">
+              <option selected>Choose...</option>
+              <option>1. Play Group</option>
+              <option>2. Nursery</option>
+              <option>3. Prep</option>
+            </select>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button id="saveChanges" type="button" class="btn btn-primary" onclick="updateStudenRecord(this)"> Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- <ol id="list">
+
+    </ol> -->
+</div>
+    <br>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</html>
